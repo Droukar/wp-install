@@ -1,55 +1,55 @@
-# Script d'installation de WordPress
+# WordPress Installation Script
 
-Ce script bash automatise l'installation de WordPress sur votre machine locale. Il configure également WordPress avec les informations de base de données fournies, installe et active un ensemble de plugins, et effectue d'autres configurations initiales.
+This bash script automates the installation of WordPress on your local machine. It also configures WordPress with the provided database information, installs and activates a set of plugins, and performs other initial configurations.
 
-## Prérequis
+## Prerequisites
 
 - MySQL
 - wget
-- Homebrew (pour les utilisateurs de Mac)
+- Homebrew (for Mac users)
 - WP-CLI
 
-## Utilisation
+## Usage
 
-1. Ouvrez un terminal.
-2. Naviguez vers le répertoire contenant le script `wp_install.sh`.
-3. Rendez le script exécutable avec la commande suivante :
+1. Open a terminal.
+2. Navigate to the directory containing the `wp_install.sh` script.
+3. Make the script executable with the following command:
     ```bash
     chmod +x wp_install.sh
     ```
-4. Exécutez le script avec la commande suivante :
+4. Run the script with the following command:
     ```bash
     ./wp_install.sh
     ```
-5. Le script vous demandera d'entrer les informations suivantes :
-    - Nom de la base de données
-    - Nom d'utilisateur de la base de données
-    - Mot de passe de la base de données
-    - Hôte de la base de données
-    - URL du site
-    - Titre du site
-    - Nom d'utilisateur de l'administrateur
-    - Mot de passe de l'administrateur
-    - Email de l'administrateur
+5. The script will prompt you to enter the following information:
+    - Database name
+    - Database username
+    - Database password
+    - Database host
+    - Site URL
+    - Site title
+    - Admin username
+    - Admin password
+    - Admin email
 
-## Ce que fait le script
+## What the Script Does
 
-1. Crée une base de données MySQL.
-2. Télécharge la dernière version de WordPress.
-3. Extrait WordPress et le déplace dans le répertoire souhaité.
-4. Crée et configure le fichier `wp-config.php`.
-5. Installe WP-CLI.
-6. Installe WordPress via WP-CLI.
-7. Change la langue de WordPress en français.
-8. Modifie la structure des permaliens.
-9. Crée des pages.
-10. Définit les pages d'accueil et de blog.
-11. Crée un menu et ajoute des éléments de menu.
-12. Supprime les thèmes et plugins par défaut.
-13. Installe et active le thème GeneratePress et son thème enfant.
-14. Installe et active un ensemble de plugins.
-15. Désactive les mises à jour automatiques pour les thèmes et plugins.
+1. Creates a MySQL database.
+2. Downloads the latest version of WordPress.
+3. Extracts WordPress and moves it to the desired directory.
+4. Creates and configures the `wp-config.php` file.
+5. Installs WP-CLI.
+6. Installs WordPress via WP-CLI.
+7. Changes the WordPress language to French.
+8. Modifies the permalink structure.
+9. Creates pages.
+10. Sets the home and blog pages.
+11. Creates a menu and adds menu items.
+12. Deletes default themes and plugins.
+13. Installs and activates the GeneratePress theme and its child theme.
+14. Installs and activates a set of plugins.
+15. Disables automatic updates for themes and plugins.
 
 ## Note
 
-Ce script est destiné à être utilisé sur une machine locale pour le développement. Ne l'utilisez pas dans un environnement de production.
+This script is intended for use on a local machine for development purposes. Do not use it in a production environment.
